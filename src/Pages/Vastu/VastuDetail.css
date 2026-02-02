@@ -1,0 +1,73 @@
+.vastu-detail-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.vastu-detail-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Back button */
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 18px;
+  margin-bottom: 32px;
+
+  background: #ffffff;
+  border: 1.5px solid #4b6b4b;
+  color: #4b6b4b;
+
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.back-btn:hover {
+  background: #4b6b4b;
+  color: #ffffff;
+}
+
+
+/* Image */
+.vastu-detail-image {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 32px;
+  object-fit: cover;
+}
+
+/* Title */
+.vastu-detail-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+/* Content */
+.vastu-detail-content {
+  font-size: 17px;
+  color: #374151;
+  line-height: 1.8;
+  max-width: 720px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .vastu-detail-title {
+    font-size: 28px;
+  }
+
+  .vastu-detail-content {
+    font-size: 16px;
+  }
+}

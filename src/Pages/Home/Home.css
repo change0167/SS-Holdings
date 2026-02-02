@@ -1,0 +1,101 @@
+/* =========================
+   HOME HERO SECTION
+========================= */
+/* Hide H1 on desktop by default */
+.home-content h1 {
+  display: none;
+}
+.home-hero {
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* Show RIGHT side of image */
+  background-position: right center;
+
+  position: relative;
+  padding: 80px 64px;
+  box-sizing: border-box;
+}
+
+/* =========================
+   TEXT (TOP LEFT)
+========================= */
+.home-content {
+  max-width: 420px;
+  color: white;
+}
+
+
+
+.home-content p {
+  font-size: 22px;
+  line-height: 1.7;
+   text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+/* =========================
+   CTA BUTTON (RIGHT BOTTOM)
+========================= */
+.home-cta {
+  position: absolute;
+  right: 64px;
+  bottom: 48px;
+
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 14px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-cta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 16px 40px rgba(185, 138, 138, 0.6);
+}
+
+.home-cta:active {
+  transform: scale(0.95);
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .home-content h1 {
+    display: block;
+  }
+}
+/* Mobile – keep original size */
+@media (max-width: 768px) {
+  .home-content p {
+    font-size: 16px; /* same as before */
+    line-height: 1.6;
+  }
+}
+@media (max-width: 768px) {
+  .home-hero {
+    padding: 100px 24px;
+    background-position: right top;
+  }
+
+  .home-content h1 {
+    font-size: 32px;
+  }
+
+  .home-content p {
+    font-size: 16px;
+  }
+
+  /* Move CTA below content on mobile */
+  .home-cta {
+    position: static;
+    margin-top: 32px;
+    display: inline-block;
+  }
+}

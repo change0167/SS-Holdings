@@ -1,0 +1,188 @@
+.project-detail-section {
+  padding: 96px 0;
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+}
+
+.project-detail-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Back */
+.back-btn {
+  background: rgba(37, 99, 235, 0.1);
+  border: solid;
+  padding: 8px 16px;
+  border-radius: 999px;
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 32px;
+}
+ /* =========================
+   GALLERY VIEW ALL BUTTON
+========================= */
+
+.gallery-view-btn {
+  margin-top: 16px;
+  padding: 10px 18px;
+  background: transparent;
+  border: 1px solid #2563eb;
+  color: #2563eb;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.gallery-view-btn:hover {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.gallery-view-btn:active {
+  transform: scale(0.96);
+}
+
+/* .back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 18px;
+  margin-bottom: 32px;
+
+  background: #c40000;
+  border: 1.5px solid #2563eb;
+  color: #2563eb;
+
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+} */
+
+/* Hover */
+.back-btn:hover {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+/* Active click */
+.back-btn:active {
+  transform: scale(0.96);
+}
+
+/* Focus (keyboard accessibility) */
+.back-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
+}
+
+/* Image */
+.project-detail-image {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 32px;
+  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.15);
+}
+
+/* Title */
+.project-detail-title {
+  font-size: 40px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+/* Meta */
+.project-meta {
+  display: flex;
+  gap: 16px;
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 40px;
+}
+
+/* Sections */
+.project-section {
+  margin-bottom: 48px;
+}
+
+.project-section h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 16px;
+}
+
+.project-section p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #334155;
+  margin-bottom: 16px;
+}
+
+/* Gallery */
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.project-gallery img {
+  width: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+/* Brochure */
+.project-brochure a {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #2563eb;
+  color: #ffffff;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+}
+/* =========================
+   PROJECT MAP
+========================= */
+.project-map-wrapper {
+  width: 100%;
+  min-height: 420px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 16px;
+}
+
+.project-map-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  border: 0;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .project-map-wrapper,
+  .project-map-wrapper iframe {
+    min-height: 300px;
+  }
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-detail-title {
+    font-size: 30px;
+  }
+}

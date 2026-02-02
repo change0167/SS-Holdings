@@ -1,0 +1,109 @@
+/* Section */
+.vastu-section {
+  padding: 64px 0;
+  background-color: #ffffff;
+}
+
+/* Container */
+.vastu-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Header */
+.vastu-header {
+  max-width: 420px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.vastu-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.vastu-header p {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* Grid */
+.vastu-grid {
+  max-width: 1200px;
+  margin: 64px auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+/* Card */
+.vastu-card {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Image */
+.vastu-image-wrapper {
+  overflow: hidden;
+  border-radius: 12px;
+  aspect-ratio: 16 / 9;
+}
+
+.vastu-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.vastu-card:hover img {
+  transform: scale(1.2);
+}
+
+/* Title */
+.vastu-card h3 {
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.4;
+}
+
+/* Tags */
+.vastu-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.vastu-tag {
+  font-size: 12px;
+  padding: 4px 10px;
+  background-color: #f3f4f6;
+  color: #374151;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .vastu-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .vastu-card h3 {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+
+  .vastu-tags {
+    margin-top: 10px;
+  }
+}

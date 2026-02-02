@@ -1,0 +1,67 @@
+.project-card {
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.15);
+}
+
+/* Image */
+.project-card-image {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.project-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Badge */
+.project-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #ffffff;
+  background: #64748b;
+}
+
+/* Status colors */
+.project-badge.completed {
+  background: #16a34a;
+}
+
+.project-badge.ongoing {
+  background: #f59e0b;
+}
+
+/* Body */
+.project-card-body {
+  padding: 20px;
+}
+
+.project-card-body h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.project-card-body p {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.6;
+}

@@ -1,0 +1,38 @@
+/* =========================
+   WHATSAPP FLOAT BUTTON
+========================= */
+.whatsapp-float {
+  position: fixed;
+  left: 16px;
+  bottom: 24px;
+  width: 52px;
+  height: 52px;
+  background-color: #25d366;
+  color: white;
+  font-size: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.45);
+  z-index: 1200;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 28px rgba(37, 211, 102, 0.6);
+}
+
+.whatsapp-float:active {
+  transform: scale(0.95);
+}
+
+/* Mobile tweak */
+@media (max-width: 768px) {
+  .whatsapp-float {
+    left: 12px;
+    bottom: 16px;
+  }
+}
