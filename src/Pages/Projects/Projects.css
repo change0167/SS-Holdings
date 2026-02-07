@@ -1,9 +1,16 @@
+<<<<<<< HEAD
 /* ===============================
    PROJECTS SECTION (LUXURY)
 =============================== */
 .projects-section {
   padding: 64px 0;
   background-color: #f7f4ef; /* warm beige */
+=======
+/* Section */
+.projects-section {
+  padding: 64px 0;
+  background-color: #ffffff;
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 }
 
 /* Container */
@@ -13,9 +20,13 @@
   padding: 0 16px;
 }
 
+<<<<<<< HEAD
 /* ===============================
    HEADER
 =============================== */
+=======
+/* Header */
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 .projects-header {
   max-width: 420px;
   margin: 0 auto;
@@ -25,13 +36,18 @@
 .projects-header h2 {
   font-size: 32px;
   font-weight: 700;
+<<<<<<< HEAD
   color: #2f3a2f; /* deep olive */
   letter-spacing: 0.3px;
+=======
+  color: #111827;
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 }
 
 .projects-header p {
   margin-top: 20px;
   font-size: 16px;
+<<<<<<< HEAD
   color: #6b705c; /* muted olive-gray */
   line-height: 1.6;
 }
@@ -39,6 +55,13 @@
 /* ===============================
    GRID
 =============================== */
+=======
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* Grid (same as Vastu) */
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 .projects-grid {
   max-width: 1200px;
   margin: 64px auto 0;
@@ -47,6 +70,7 @@
   gap: 40px;
 }
 
+<<<<<<< HEAD
 /* ===============================
    SUBHEADING
 =============================== */
@@ -63,8 +87,23 @@
 /* ===============================
    RESPONSIVE
 =============================== */
+=======
+/* Responsive */
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 @media (max-width: 768px) {
   .projects-header h2 {
     font-size: 28px;
   }
 }
+<<<<<<< HEAD
+=======
+
+.projects-subheading {
+  margin-top: 64px;
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #111827;
+  text-align: center;
+}
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb

@@ -5,11 +5,20 @@ import { fetchFromStrapi } from "../../api/strapi";
 import ProjectCard from "./ProjectCard";
 
 /* =========================
+<<<<<<< HEAD
    TYPES (MATCH STRAPI CLOUD)
+=======
+   TYPES
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 ========================= */
 
 type ImageFormat = {
   url: string;
+<<<<<<< HEAD
+=======
+  width: number;
+  height: number;
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 };
 
 type StrapiImage = {
@@ -30,7 +39,11 @@ type Project = {
   Title: string;
   slug: string;
   Current_Status: string; // "Ongoing" | "Completed"
+<<<<<<< HEAD
   Cover_img?: StrapiImage;
+=======
+  Cover_img: StrapiImage;
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
   Description: RichTextBlock[];
 };
 
@@ -65,11 +78,19 @@ function Projects() {
   }, []);
 
   const ongoingProjects = projects.filter(
+<<<<<<< HEAD
     (p) => p.Current_Status?.toLowerCase() === "ongoing"
   );
 
   const completedProjects = projects.filter(
     (p) => p.Current_Status?.toLowerCase() === "completed"
+=======
+    (p) => p.Current_Status.toLowerCase() === "ongoing"
+  );
+
+  const completedProjects = projects.filter(
+    (p) => p.Current_Status.toLowerCase() === "completed"
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
   );
 
   return (
@@ -94,10 +115,14 @@ function Projects() {
                 key={project.id}
                 title={project.Title}
                 description={extractText(project.Description)}
+<<<<<<< HEAD
                 image={
                   project.Cover_img?.formats?.medium?.url ||
                   project.Cover_img?.url
                 } // ✅ DIRECT STRAPI CLOUD URL
+=======
+                image={project.Cover_img}
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
                 status={project.Current_Status}
                 onClick={() =>
                   navigate(`/project/${project.slug || project.id}`)
@@ -114,10 +139,14 @@ function Projects() {
                 key={project.id}
                 title={project.Title}
                 description={extractText(project.Description)}
+<<<<<<< HEAD
                 image={
                   project.Cover_img?.formats?.medium?.url ||
                   project.Cover_img?.url
                 } // ✅ DIRECT STRAPI CLOUD URL
+=======
+                image={project.Cover_img}
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
                 status={project.Current_Status}
                 onClick={() =>
                   navigate(`/project/${project.slug || project.id}`)

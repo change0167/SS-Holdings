@@ -4,14 +4,27 @@ import "./Vastu.css";
 import { fetchFromStrapi } from "../../api/strapi";
 
 /* =========================
+<<<<<<< HEAD
    TYPES (MATCH STRAPI CLOUD)
+=======
+   TYPES
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 ========================= */
 
 type ImageFormat = {
   url: string;
+<<<<<<< HEAD
 };
 
 type StrapiImage = {
+=======
+  width: number;
+  height: number;
+};
+
+type StrapiImage = {
+  id: number;
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
   url: string;
   alternativeText: string | null;
   formats?: {
@@ -26,9 +39,17 @@ type Vastu = {
   id: number;
   Title: string;
   slug: string;
+<<<<<<< HEAD
   Image?: StrapiImage;
 };
 
+=======
+  Image: StrapiImage;
+};
+
+const STRAPI_URL = "http://localhost:1337";
+
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 function Vastu() {
   const navigate = useNavigate();
 
@@ -65,6 +86,7 @@ function Vastu() {
           {error && <p>{error}</p>}
 
           <div className="vastu-grid">
+<<<<<<< HEAD
             {vastus.map((item) => {
               const imageUrl =
                 item.Image?.formats?.medium?.url ||
@@ -101,6 +123,37 @@ function Vastu() {
                 </div>
               );
             })}
+=======
+            {vastus.map((item) => (
+              <div
+                key={item.id}
+                className="vastu-card"
+                role="button"
+                tabIndex={0}
+                onClick={() =>
+                  navigate(`/vastu/${item.slug || item.id}`)
+                }
+                onKeyDown={(e) =>
+                  e.key === "Enter" &&
+                  navigate(`/vastu/${item.slug || item.id}`)
+                }
+              >
+                <div className="vastu-image-wrapper">
+                  <img
+                    src={`${STRAPI_URL}${
+                      item.Image.formats?.medium?.url ||
+                      item.Image.url
+                    }`}
+                    alt={
+                      item.Image.alternativeText || item.Title
+                    }
+                  />
+                </div>
+
+                <h3>{item.Title}</h3>
+              </div>
+            ))}
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
           </div>
         </div>
       </div>

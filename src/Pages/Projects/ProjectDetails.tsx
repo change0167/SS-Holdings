@@ -4,10 +4,18 @@ import "./ProjectDetail.css";
 import { fetchFromStrapi } from "../../api/strapi";
 
 /* =========================
+<<<<<<< HEAD
    TYPES (MATCH STRAPI CLOUD)
 ========================= */
 
 type RichTextChild = {
+=======
+   TYPES
+========================= */
+
+type RichTextChild = {
+  type: "text";
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
   text: string;
 };
 
@@ -18,6 +26,11 @@ type RichTextBlock = {
 
 type ImageFormat = {
   url: string;
+<<<<<<< HEAD
+=======
+  width: number;
+  height: number;
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 };
 
 type StrapiMedia = {
@@ -48,6 +61,11 @@ type Project = {
   Brochure?: StrapiMedia[];
 };
 
+<<<<<<< HEAD
+=======
+const STRAPI_URL = "http://localhost:1337";
+
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 function ProjectDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -100,11 +118,14 @@ function ProjectDetail() {
     );
   }
 
+<<<<<<< HEAD
   const coverImage =
     project.Cover_img.formats?.large?.url ||
     project.Cover_img.formats?.medium?.url ||
     project.Cover_img.url;
 
+=======
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
   return (
     <section className="project-detail-section">
       <div className="project-detail-container">
@@ -114,6 +135,7 @@ function ProjectDetail() {
 
         <h1 className="project-detail-title">{project.Title}</h1>
 
+<<<<<<< HEAD
         {/* Cover Image */}
         {coverImage && (
           <img
@@ -122,6 +144,17 @@ function ProjectDetail() {
             className="project-detail-image"
           />
         )}
+=======
+        <img
+          src={`${STRAPI_URL}${
+            project.Cover_img.formats?.large?.url ||
+            project.Cover_img.formats?.medium?.url ||
+            project.Cover_img.url
+          }`}
+          alt={project.Cover_img.alternativeText || project.Title}
+          className="project-detail-image"
+        />
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 
         <div className="project-meta">
           <span>{project.Location}</span>
@@ -170,7 +203,11 @@ function ProjectDetail() {
           </section>
         )}
 
+<<<<<<< HEAD
         {/* 🔥 Gallery */}
+=======
+        {/* 🔥 GALLERY WITH VIEW ALL */}
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
         {project.Gallary && project.Gallary.length > 0 && (
           <section className="project-section">
             <h2>Gallery</h2>
@@ -179,6 +216,7 @@ function ProjectDetail() {
               {(showAllImages
                 ? project.Gallary
                 : project.Gallary.slice(0, 4)
+<<<<<<< HEAD
               ).map((img) => {
                 const galleryImg =
                   img.formats?.medium?.url || img.url;
@@ -191,6 +229,17 @@ function ProjectDetail() {
                   />
                 );
               })}
+=======
+              ).map((img) => (
+                <img
+                  key={img.id}
+                  src={`${STRAPI_URL}${
+                    img.formats?.medium?.url || img.url
+                  }`}
+                  alt={img.alternativeText || project.Title}
+                />
+              ))}
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
             </div>
 
             {project.Gallary.length > 4 && !showAllImages && (
@@ -205,12 +254,20 @@ function ProjectDetail() {
         )}
 
         {/* Brochure */}
+<<<<<<< HEAD
         {project.Brochure && project.Brochure.length > 0 && (
+=======
+        {project.Brochure && (
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
           <div className="project-brochure">
             {project.Brochure.map((file) => (
               <a
                 key={file.id}
+<<<<<<< HEAD
                 href={file.url} // ✅ DIRECT STRAPI CLOUD FILE URL
+=======
+                href={`${STRAPI_URL}${file.url}`}
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
                 target="_blank"
                 rel="noreferrer"
               >

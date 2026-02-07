@@ -1,8 +1,15 @@
 .footer {
+<<<<<<< HEAD
   background: #f7f4ef; /* warm beige */
   padding: 64px 32px;
   font-family: "Georgia", "Times New Roman", serif;
   color: #2f3a2f; /* deep olive */
+=======
+  background: #f7f6f3;
+  padding: 64px 32px;
+  font-family: "Georgia", "Times New Roman", serif;
+  color: #111;
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 }
 
 .footer-container {
@@ -13,9 +20,13 @@
   gap: 48px;
 }
 
+<<<<<<< HEAD
 /* ===============================
    LEFT
 =============================== */
+=======
+/* LEFT */
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 .footer-left {
   max-width: 600px;
 }
@@ -23,18 +34,29 @@
 .footer-disclaimer {
   font-size: 14px;
   line-height: 1.6;
+<<<<<<< HEAD
   color: #6b705c; /* muted olive-gray */
+=======
+  color: #333;
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
   margin-bottom: 32px;
 }
 
 .footer-contact p {
   margin: 6px 0;
   font-size: 15px;
+<<<<<<< HEAD
   color: #2f3a2f;
 }
 
 .footer-contact a {
   color: #b59a63; /* antique gold */
+=======
+}
+
+.footer-contact a {
+  color: #b08b57;
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
   text-decoration: none;
 }
 
@@ -51,6 +73,7 @@
 .footer-socials a {
   font-size: 18px;
   text-decoration: none;
+<<<<<<< HEAD
   color: #2f3a2f;
   transition: color 0.2s ease;
 }
@@ -70,6 +93,19 @@
 
 .footer-link {
   color: #b59a63; /* antique gold */
+=======
+  color: #000;
+}
+
+/* RIGHT */
+.footer-right {
+  text-align: right;
+  font-size: 15px;
+}
+
+.footer-link {
+  color: #b08b57;
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
   text-decoration: none;
 }
 
@@ -86,18 +122,27 @@
   font-weight: 700;
   display: block;
   line-height: 1;
+<<<<<<< HEAD
   color: #2f3a2f;
+=======
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 }
 
 .footer-logo p {
   margin-top: 8px;
   font-size: 18px;
+<<<<<<< HEAD
   color: #6b705c;
 }
 
 /* ===============================
    RESPONSIVE
 =============================== */
+=======
+}
+
+/* RESPONSIVE */
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;

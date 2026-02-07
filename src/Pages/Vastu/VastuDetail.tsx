@@ -4,10 +4,18 @@ import "./VastuDetail.css";
 import { fetchFromStrapi } from "../../api/strapi";
 
 /* =========================
+<<<<<<< HEAD
    TYPES (MATCH STRAPI CLOUD)
 ========================= */
 
 type RichTextChild = {
+=======
+   TYPES
+========================= */
+
+type RichTextChild = {
+  type: "text";
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
   text: string;
 };
 
@@ -18,9 +26,18 @@ type RichTextBlock = {
 
 type ImageFormat = {
   url: string;
+<<<<<<< HEAD
 };
 
 type StrapiImage = {
+=======
+  width: number;
+  height: number;
+};
+
+type StrapiImage = {
+  id: number;
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
   url: string;
   alternativeText: string | null;
   formats?: {
@@ -35,10 +52,19 @@ type Vastu = {
   id: number;
   Title: string;
   slug: string;
+<<<<<<< HEAD
   Image?: StrapiImage;
   Content: RichTextBlock[];
 };
 
+=======
+  Image: StrapiImage;
+  Content: RichTextBlock[];
+};
+
+const STRAPI_URL = "http://localhost:1337";
+
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 function VastuDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -89,11 +115,14 @@ function VastuDetail() {
     );
   }
 
+<<<<<<< HEAD
   const imageUrl =
     vastu.Image?.formats?.large?.url ||
     vastu.Image?.formats?.medium?.url ||
     vastu.Image?.url;
 
+=======
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
   return (
     <section className="vastu-detail-section">
       <div className="vastu-detail-container">
@@ -103,6 +132,7 @@ function VastuDetail() {
 
         <h1 className="vastu-detail-title">{vastu.Title}</h1>
 
+<<<<<<< HEAD
         {/* Image */}
         {imageUrl && (
           <img
@@ -116,6 +146,20 @@ function VastuDetail() {
         )}
 
         {/* Content */}
+=======
+        <img
+          src={`${STRAPI_URL}${
+            vastu.Image.formats?.large?.url ||
+            vastu.Image.formats?.medium?.url ||
+            vastu.Image.url
+          }`}
+          alt={
+            vastu.Image.alternativeText || vastu.Title
+          }
+          className="vastu-detail-image"
+        />
+
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
         <div className="vastu-detail-content">
           {vastu.Content.map((block, index) =>
             block.type === "paragraph" ? (

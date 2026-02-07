@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ===============================
    VASTU SECTION (LUXURY)
 =============================== */
@@ -6,6 +7,12 @@
 .vastu-section {
   padding: 64px 0;
   background-color: #f7f4ef; /* warm beige */
+=======
+/* Section */
+.vastu-section {
+  padding: 64px 0;
+  background-color: #ffffff;
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 }
 
 /* Container */
@@ -15,9 +22,13 @@
   padding: 0 16px;
 }
 
+<<<<<<< HEAD
 /* ===============================
    HEADER
 =============================== */
+=======
+/* Header */
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 .vastu-header {
   max-width: 420px;
   margin: 0 auto;
@@ -27,13 +38,18 @@
 .vastu-header h2 {
   font-size: 32px;
   font-weight: 700;
+<<<<<<< HEAD
   color: #2f3a2f; /* deep olive */
   letter-spacing: 0.3px;
+=======
+  color: #111827;
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 }
 
 .vastu-header p {
   margin-top: 20px;
   font-size: 16px;
+<<<<<<< HEAD
   color: #6b705c; /* muted olive-gray */
   line-height: 1.6;
 }
@@ -41,6 +57,13 @@
 /* ===============================
    GRID
 =============================== */
+=======
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* Grid */
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 .vastu-grid {
   max-width: 1200px;
   margin: 64px auto 0;
@@ -49,14 +72,19 @@
   gap: 40px;
 }
 
+<<<<<<< HEAD
 /* ===============================
    CARD
 =============================== */
+=======
+/* Card */
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 .vastu-card {
   position: relative;
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 /* ===============================
    IMAGE
 =============================== */
@@ -65,17 +93,29 @@
   border-radius: 14px;
   aspect-ratio: 16 / 9;
   box-shadow: 0 14px 32px rgba(85, 107, 79, 0.18);
+=======
+/* Image */
+.vastu-image-wrapper {
+  overflow: hidden;
+  border-radius: 12px;
+  aspect-ratio: 16 / 9;
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 }
 
 .vastu-image-wrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+<<<<<<< HEAD
   transition: transform 0.35s ease;
+=======
+  transition: transform 0.3s ease;
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 }
 
 /* Hover effect */
 .vastu-card:hover img {
+<<<<<<< HEAD
   transform: scale(1.15);
 }
 
@@ -93,25 +133,54 @@
 /* ===============================
    TAGS
 =============================== */
+=======
+  transform: scale(1.2);
+}
+
+/* Title */
+.vastu-card h3 {
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.4;
+}
+
+/* Tags */
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 .vastu-tags {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
+<<<<<<< HEAD
   margin-top: 14px;
+=======
+  margin-top: 16px;
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 }
 
 .vastu-tag {
   font-size: 12px;
+<<<<<<< HEAD
   padding: 4px 12px;
   background-color: #f1ede5; /* soft beige pill */
   color: #556b4f;           /* olive text */
+=======
+  padding: 4px 10px;
+  background-color: #f3f4f6;
+  color: #374151;
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
   border-radius: 999px;
   font-weight: 500;
 }
 
+<<<<<<< HEAD
 /* ===============================
    RESPONSIVE
 =============================== */
+=======
+/* Responsive */
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 @media (max-width: 768px) {
   .vastu-grid {
     grid-template-columns: repeat(2, 1fr);

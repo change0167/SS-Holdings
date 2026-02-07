@@ -8,12 +8,20 @@
   top: 0;
   width: 100%;
   height: 64px;
+<<<<<<< HEAD
   background: #f7f4ef; /* warm beige */
+=======
+  background: white;
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
   border-radius: 5px;
   display: flex;
   align-items: center;
   padding: 0 32px;
+<<<<<<< HEAD
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+=======
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
   z-index: 1000;
 }
 
@@ -25,11 +33,19 @@
   font-size: 22px;
   font-weight: 700;
   letter-spacing: 0.5px;
+<<<<<<< HEAD
   color: #2f3a2f; /* dark olive */
+=======
+  color: #111;
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
   z-index: 2;
   user-select: none;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 /* ===============================
    NAV LINKS (CENTERED DESKTOP)
 =============================== */
@@ -47,10 +63,17 @@
 .nav-btn {
   text-decoration: none;
   padding: 8px 18px;
+<<<<<<< HEAD
   border-radius: 9px;
   font-size: 20px;
   font-weight: 500;
   color: #2f3a2f; /* dark olive text */
+=======
+  border-radius: 9px; /* pill style */
+  font-size: 20px;
+  font-weight: 500;
+  color: #374151;
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
   background: transparent;
   border: 1px solid transparent;
   transition:
@@ -60,6 +83,7 @@
     box-shadow 0.25s ease;
 }
 
+<<<<<<< HEAD
 /* Hover (luxury olive) */
 .nav-btn:hover {
   background-color: #556b4f; /* rich olive */
@@ -80,6 +104,24 @@
   box-shadow:
     0 0 0 2px rgba(199, 178, 124, 0.55),
     0 8px 20px rgba(85, 107, 79, 0.3);
+=======
+/* Hover */
+.nav-btn:hover {
+  background-color: #e79797;
+  color: #ffffff;
+  box-shadow: 0 6px 16px rgba(185, 138, 138, 0.35);
+}
+
+/* Active (click) */
+.nav-btn:active {
+  transform: scale(0.94);
+}
+
+/* Keyboard focus */
+.nav-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(185, 138, 138, 0.45);
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 }
 
 /* ===============================
@@ -91,7 +133,10 @@
   border: none;
   font-size: 26px;
   cursor: pointer;
+<<<<<<< HEAD
   color: #2f3a2f;
+=======
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
   transition: transform 0.2s ease;
 }
 
@@ -132,7 +177,11 @@
     flex-direction: column;
     align-items: center;
     gap: 0;
+<<<<<<< HEAD
     background: #f7f4ef;
+=======
+    background: white;
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 
     max-height: 0;
@@ -165,8 +214,13 @@
   }
 
   .nav-btn:hover {
+<<<<<<< HEAD
     background-color: #f1ede5; /* soft beige */
     color: #2f3a2f;
+=======
+    background-color: #f3e6e6;
+    color: #111;
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
     box-shadow: none;
   }
 }

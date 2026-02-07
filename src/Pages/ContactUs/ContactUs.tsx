@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useEffect, useState } from "react";
 import "./ContactUs.css";
 
@@ -12,12 +13,25 @@ const STRAPI_URL =
 function ContactUs() {
   /* =====================
      FORM STATE
+=======
+import React, { useEffect, useState } from 'react';
+import "./ContactUs.css";
+
+function ContactUs() {
+
+  /* =====================
+     FORM STATE (UNCHANGED)
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
   ====================== */
 
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
+<<<<<<< HEAD
     message: "", // UI only (NOT sent to API)
+=======
+    message: "",
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
   });
 
   const [errors, setErrors] = useState({
@@ -51,11 +65,14 @@ function ContactUs() {
     return isValid;
   };
 
+<<<<<<< HEAD
   /* =====================
      SUBMIT LEAD (POST)
      MESSAGE IS NOT SENT
   ====================== */
 
+=======
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!validate()) return;
@@ -63,6 +80,7 @@ function ContactUs() {
     setLoading(true);
 
     try {
+<<<<<<< HEAD
       const response = await fetch(`${STRAPI_URL}/api/leads`, {
         method: "POST",
         headers: {
@@ -71,18 +89,32 @@ function ContactUs() {
         body: JSON.stringify({
           data: {
             Name: formData.name,
+=======
+      const response = await fetch("http://localhost:1337/api/leads", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          data: {
+            Name: formData.name,   // matches Strapi schema
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
             phone: formData.phone,
           },
         }),
       });
 
       if (!response.ok) {
+<<<<<<< HEAD
         const err = await response.json();
         console.error("Strapi error:", err);
         throw new Error("Failed to submit lead");
       }
 
       // Reset form (message stays UI-only)
+=======
+        throw new Error("Failed to submit lead");
+      }
+
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
       setFormData({ name: "", phone: "", message: "" });
       setErrors({ name: "", phone: "" });
 
@@ -97,7 +129,11 @@ function ContactUs() {
 
   /* =====================
      STRAPI CONTACT INFO
+<<<<<<< HEAD
      (LATEST ENTRY)
+=======
+     (LATEST ENTRY ONLY)
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
   ====================== */
 
   const [contactInfo, setContactInfo] = useState<{
@@ -111,7 +147,11 @@ function ContactUs() {
     const fetchContactInfo = async () => {
       try {
         const res = await fetch(
+<<<<<<< HEAD
           `${STRAPI_URL}/api/ss-hodlings?sort=createdAt:desc&pagination[limit]=1`
+=======
+          "http://localhost:1337/api/ss-hodlings?sort=createdAt:desc&pagination[limit]=1"
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
         );
 
         if (!res.ok) {
@@ -119,6 +159,11 @@ function ContactUs() {
         }
 
         const json = await res.json();
+<<<<<<< HEAD
+=======
+
+        // ✅ CORRECT FOR YOUR STRAPI RESPONSE
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
         const latest = json?.data?.[0];
 
         if (latest) {
@@ -140,6 +185,10 @@ function ContactUs() {
   return (
     <section id="contact-us" className="contact-section">
       <div className="contact-container">
+<<<<<<< HEAD
+=======
+
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
         <div className="contact-header">
           <h2>Contact us</h2>
           <p>
@@ -148,7 +197,11 @@ function ContactUs() {
           </p>
         </div>
 
+<<<<<<< HEAD
         {/* INFO CARDS */}
+=======
+        {/* INFO CARDS (STRAPI-DRIVEN) */}
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
         <div className="contact-info-cards">
           <div className="info-card">
             <span className="icon">📞</span>
@@ -169,7 +222,11 @@ function ContactUs() {
           </div>
         </div>
 
+<<<<<<< HEAD
         {/* FORM */}
+=======
+        {/* FORM (UNCHANGED) */}
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
         <div className="contact-form-card">
           <h3>Book a Site Visit</h3>
 
@@ -219,6 +276,10 @@ function ContactUs() {
             </button>
           </form>
         </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
       </div>
     </section>
   );

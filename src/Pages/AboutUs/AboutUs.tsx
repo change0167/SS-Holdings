@@ -15,7 +15,11 @@ function AboutUs() {
               src="src/assets/seetharamaraju.jpeg"
               alt="Seetharamaraju"
             />
+<<<<<<< HEAD
             <p className="name">Seetharama Raju Sayyaparaju</p>
+=======
+            <p className="name">Seetharamaraju</p>
+>>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
             <p className="role">Board Member</p>
           </div>
 
