@@ -45,6 +45,7 @@
    BUTTON-STYLE LINKS
 =============================== */
 .nav-btn {
+  width: max-content;
   text-decoration: none;
   padding: 8px 18px;
   border-radius: 9px;
