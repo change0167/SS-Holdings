@@ -1,5 +1,3 @@
-
-import React from "react";
 import homeBg from "../../assets/HomeBg.jpg";
 import "./Home.css";
 
