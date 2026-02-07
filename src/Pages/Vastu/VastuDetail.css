@@ -1,10 +1,6 @@
 .vastu-detail-section {
   padding: 80px 0;
-<<<<<<< HEAD
   background-color: #f7f4ef; /* warm beige */
-=======
-  background-color: #ffffff;
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 }
 
 .vastu-detail-container {
@@ -13,13 +9,9 @@
   padding: 0 16px;
 }
 
-<<<<<<< HEAD
 /* ===============================
    BACK BUTTON
 =============================== */
-=======
-/* Back button */
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 .back-btn {
   display: inline-flex;
   align-items: center;
@@ -28,15 +20,9 @@
   padding: 10px 18px;
   margin-bottom: 32px;
 
-<<<<<<< HEAD
   background: rgba(85, 107, 79, 0.12);
   border: 1.5px solid #556b4f;
   color: #556b4f;
-=======
-  background: #ffffff;
-  border: 1.5px solid #4b6b4b;
-  color: #4b6b4b;
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 
   font-size: 14px;
   font-weight: 600;
@@ -47,7 +33,6 @@
 }
 
 .back-btn:hover {
-<<<<<<< HEAD
   background: #556b4f;
   color: #f7f4ef;
   box-shadow: 0 6px 16px rgba(85, 107, 79, 0.35);
@@ -65,20 +50,11 @@
 /* ===============================
    IMAGE
 =============================== */
-=======
-  background: #4b6b4b;
-  color: #ffffff;
-}
-
-
-/* Image */
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 .vastu-detail-image {
   width: 100%;
   border-radius: 16px;
   margin-bottom: 32px;
   object-fit: cover;
-<<<<<<< HEAD
   box-shadow: 0 24px 48px rgba(85, 107, 79, 0.25);
 }
 
@@ -89,43 +65,23 @@
   font-size: 36px;
   font-weight: 700;
   color: #2f3a2f; /* deep olive */
-=======
-}
-
-/* Title */
-.vastu-detail-title {
-  font-size: 36px;
-  font-weight: 700;
-  color: #111827;
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
   margin-bottom: 16px;
   line-height: 1.2;
 }
 
-<<<<<<< HEAD
 /* ===============================
    CONTENT
 =============================== */
 .vastu-detail-content {
   font-size: 17px;
   color: #3f4a3f; /* soft olive text */
-=======
-/* Content */
-.vastu-detail-content {
-  font-size: 17px;
-  color: #374151;
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
   line-height: 1.8;
   max-width: 720px;
 }
 
-<<<<<<< HEAD
 /* ===============================
    RESPONSIVE
 =============================== */
-=======
-/* Responsive */
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 @media (max-width: 768px) {
   .vastu-detail-title {
     font-size: 28px;

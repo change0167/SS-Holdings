@@ -1,20 +1,12 @@
 /* =========================
-<<<<<<< HEAD
    HOME HERO SECTION (LUXURY)
 ========================= */
 
-=======
-   HOME HERO SECTION
-========================= */
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 /* Hide H1 on desktop by default */
 .home-content h1 {
   display: none;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 .home-hero {
   min-height: 100vh;
   width: 100%;
@@ -34,7 +26,6 @@
 ========================= */
 .home-content {
   max-width: 420px;
-<<<<<<< HEAD
   color: #f7f4ef; /* warm beige text */
 }
 
@@ -45,18 +36,6 @@
   text-shadow: 0 4px 14px rgba(47, 58, 47, 0.55); /* olive-charcoal shadow */
 }
 
-=======
-  color: white;
-}
-
-
-
-.home-content p {
-  font-size: 22px;
-  line-height: 1.7;
-   text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
-}
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 /* =========================
    CTA BUTTON (RIGHT BOTTOM)
 ========================= */
@@ -65,19 +44,13 @@
   right: 64px;
   bottom: 48px;
 
-<<<<<<< HEAD
   background-color: #f7f4ef; /* warm beige */
   color: #2f3a2f;            /* deep olive */
-=======
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
   padding: 14px 28px;
   border-radius: 999px;
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
-<<<<<<< HEAD
   letter-spacing: 0.3px;
 
   box-shadow:
@@ -85,24 +58,15 @@
     inset 0 0 0 1px rgba(199, 178, 124, 0.45); /* subtle gold edge */
 
   transition: transform 0.2s ease, box-shadow 0.25s ease, background-color 0.25s ease;
-=======
-
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 }
 
 .home-cta:hover {
   transform: scale(1.05);
-<<<<<<< HEAD
   background-color: #556b4f; /* rich olive */
   color: #f7f4ef;
   box-shadow:
     0 18px 46px rgba(47, 58, 47, 0.55),
     inset 0 0 0 1px rgba(199, 178, 124, 0.6);
-=======
-  box-shadow: 0 16px 40px rgba(185, 138, 138, 0.6);
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 }
 
 .home-cta:active {
@@ -117,7 +81,6 @@
     display: block;
   }
 }
-<<<<<<< HEAD
 
 /* Mobile – keep original size */
 @media (max-width: 768px) {
@@ -127,15 +90,6 @@
   }
 }
 
-=======
-/* Mobile – keep original size */
-@media (max-width: 768px) {
-  .home-content p {
-    font-size: 16px; /* same as before */
-    line-height: 1.6;
-  }
-}
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 @media (max-width: 768px) {
   .home-hero {
     padding: 100px 24px;
@@ -144,11 +98,8 @@
 
   .home-content h1 {
     font-size: 32px;
-<<<<<<< HEAD
     color: #f7f4ef;
     text-shadow: 0 4px 14px rgba(47, 58, 47, 0.6);
-=======
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
   }
 
   .home-content p {

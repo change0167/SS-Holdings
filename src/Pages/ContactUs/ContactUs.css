@@ -1,16 +1,9 @@
-<<<<<<< HEAD
 /* ===============================
    CONTACT SECTION (LUXURY)
 =============================== */
 .contact-section {
   padding: 80px 0;
   background-color: #f7f4ef; /* warm beige */
-=======
-/* Section */
-.contact-section {
-  padding: 80px 0;
-  background-color: #f9fafb;
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 }
 
 /* Container */
@@ -20,13 +13,9 @@
   padding: 0 16px;
 }
 
-<<<<<<< HEAD
 /* ===============================
    HEADER
 =============================== */
-=======
-/* Header */
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 .contact-header {
   max-width: 600px;
   margin: 0 auto 48px;
@@ -36,17 +25,12 @@
 .contact-header h2 {
   font-size: 36px;
   font-weight: 700;
-<<<<<<< HEAD
   color: #2f3a2f; /* deep olive */
-=======
-  color: #111827;
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 }
 
 .contact-header p {
   margin-top: 16px;
   font-size: 16px;
-<<<<<<< HEAD
   color: #6b705c; /* muted olive-gray */
   line-height: 1.6;
 }
@@ -54,13 +38,6 @@
 /* ===============================
    INFO CARDS
 =============================== */
-=======
-  color: #6b7280;
-  line-height: 1.6;
-}
-
-/* Info cards */
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 .contact-info-cards {
   display: flex;
   justify-content: center;
@@ -75,11 +52,7 @@
   width: 280px;
   border-radius: 12px;
   text-align: center;
-<<<<<<< HEAD
   box-shadow: 0 12px 30px rgba(85, 107, 79, 0.18);
-=======
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 }
 
 .info-card .icon {
@@ -90,7 +63,6 @@
 
 .info-card p {
   font-size: 14px;
-<<<<<<< HEAD
   color: #2f3a2f;
   margin: 4px 0;
 }
@@ -98,22 +70,11 @@
 /* ===============================
    FORM CARD
 =============================== */
-=======
-  color: #111827;
-  margin: 4px 0;
-}
-
-/* Form card */
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 .contact-form-card {
   background: #ffffff;
   padding: 40px;
   border-radius: 16px;
-<<<<<<< HEAD
   box-shadow: 0 24px 48px rgba(85, 107, 79, 0.18);
-=======
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 }
 
 .contact-form-card h3 {
@@ -121,18 +82,12 @@
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 32px;
-<<<<<<< HEAD
   color: #2f3a2f;
 }
 
 /* ===============================
    FORM
 =============================== */
-=======
-}
-
-/* Form */
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -153,10 +108,7 @@
   font-weight: 500;
   margin-bottom: 6px;
   display: block;
-<<<<<<< HEAD
   color: #2f3a2f;
-=======
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 }
 
 .contact-form input,
@@ -164,7 +116,6 @@
   width: 100%;
   padding: 12px 14px;
   border-radius: 8px;
-<<<<<<< HEAD
   border: 1px solid #d6d3c8;
   font-size: 14px;
   outline: none;
@@ -176,11 +127,6 @@
 .contact-form textarea:focus {
   border-color: #556b4f;
   box-shadow: 0 0 0 2px rgba(199, 178, 124, 0.35);
-=======
-  border: 1px solid #e5e7eb;
-  font-size: 14px;
-  outline: none;
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 }
 
 .contact-form textarea {
@@ -188,19 +134,14 @@
   resize: vertical;
 }
 
-<<<<<<< HEAD
 /* ===============================
    BUTTON (PRIMARY CTA)
 =============================== */
-=======
-/* Button */
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 .contact-form button {
   margin-top: 12px;
   padding: 14px;
   border-radius: 10px;
   border: none;
-<<<<<<< HEAD
   background: #556b4f; /* rich olive */
   color: #f7f4ef;
   font-size: 16px;
@@ -217,20 +158,6 @@
 /* ===============================
    RESPONSIVE
 =============================== */
-=======
-  background: #2563eb;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.contact-form button:hover {
-  background: #1e40af;
-}
-
-/* Responsive */
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 @media (max-width: 768px) {
   .form-row {
     flex-direction: column;

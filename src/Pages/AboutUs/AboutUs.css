@@ -1,16 +1,9 @@
-<<<<<<< HEAD
 /* ===============================
    ABOUT SECTION (LUXURY)
 =============================== */
 .about-section {
   padding: 64px 0;
   background-color: #f7f4ef; /* warm beige */
-=======
-/* Section */
-.about-section {
-  padding: 64px 0;
-  background-color: #ffffff;
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 }
 
 /* Container */
@@ -24,29 +17,17 @@
   text-align: center;
   font-size: 32px;
   font-weight: 700;
-<<<<<<< HEAD
   color: #2f3a2f; /* deep olive */
   margin-bottom: 48px;
   letter-spacing: 0.3px;
 }
 
 /* Cards wrapper */
-=======
-  color: #111827;
-  margin-bottom: 48px;
-}
-
-/* Cards wrapper (HORIZONTAL FIX) */
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 .about-cards {
   display: flex;
   justify-content: center;
   gap: 40px;
-<<<<<<< HEAD
   flex-wrap: nowrap;
-=======
-  flex-wrap: nowrap; /* 🔴 THIS FORCES HORIZONTAL */
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 }
 
 /* Individual card */
@@ -64,13 +45,10 @@
   height: 128px;
   border-radius: 50%;
   object-fit: cover;
-<<<<<<< HEAD
   background-color: #eae6dc;
   box-shadow:
     0 6px 18px rgba(85, 107, 79, 0.25),
     inset 0 0 0 3px rgba(247, 244, 239, 0.9);
-=======
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 }
 
 /* Name */
@@ -78,32 +56,20 @@
   margin-top: 16px;
   font-size: 18px;
   font-weight: 700;
-<<<<<<< HEAD
   color: #2f3a2f; /* dark olive */
-=======
-  color: #111827;
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 }
 
 /* Role */
 .about-card .role {
   margin-top: 4px;
   font-size: 14px;
-<<<<<<< HEAD
   color: #6b705c; /* muted olive-gray */
   letter-spacing: 0.3px;
-=======
-  color: #6b7280;
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 }
 
 /* Responsive fallback */
 @media (max-width: 900px) {
   .about-cards {
-<<<<<<< HEAD
     flex-wrap: wrap;
-=======
-    flex-wrap: wrap; /* allow wrap on small screens */
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
   }
 }

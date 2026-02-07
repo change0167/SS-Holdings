@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // import { useEffect, useState } from "react";
 // import { useNavigate } from "react-router-dom";
 // import "./Blogs.css";
@@ -113,36 +112,20 @@
 // }
 
 // export default Blogs;
-=======
-
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Blogs.css";
 import { fetchFromStrapi } from "../../api/strapi";
 
 /* =========================
-<<<<<<< HEAD
    TYPES (MATCH STRAPI CLOUD)
-=======
-   TYPES (NO any USED)
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 ========================= */
 
 type ImageFormat = {
   url: string;
-<<<<<<< HEAD
 };
 
 type StrapiImage = {
-=======
-  width: number;
-  height: number;
-};
-
-type StrapiImage = {
-  id: number;
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
   url: string;
   alternativeText: string | null;
   formats?: {
@@ -160,11 +143,6 @@ type Blog = {
   Image?: StrapiImage;
 };
 
-<<<<<<< HEAD
-=======
-const STRAPI_URL = "http://localhost:1337";
-
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 function Blogs() {
   const navigate = useNavigate();
 
@@ -200,7 +178,6 @@ function Blogs() {
           {error && <p>{error}</p>}
 
           <div className="blog-grid">
-<<<<<<< HEAD
             {blogs.map((blog) => {
               const imageUrl =
                 blog.Image?.formats?.medium?.url ||
@@ -232,36 +209,6 @@ function Blogs() {
                 </div>
               );
             })}
-=======
-            {blogs.map((blog) => (
-              <div
-                key={blog.id}
-                className="blog-card"
-                onClick={() =>
-                  navigate(`/blog/${blog.slug || blog.id}`)
-                }
-              >
-                {/* Image */}
-                {blog.Image && (
-                  <div className="blog-image-wrapper">
-                    <img
-                      src={`${STRAPI_URL}${
-                        blog.Image.formats?.medium?.url ||
-                        blog.Image.url
-                      }`}
-                      alt={
-                        blog.Image.alternativeText ||
-                        blog.Heading
-                      }
-                    />
-                  </div>
-                )}
-
-                {/* Heading */}
-                <h3>{blog.Heading}</h3>
-              </div>
-            ))}
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
           </div>
         </div>
       </div>
@@ -270,7 +217,4 @@ function Blogs() {
 }
 
 export default Blogs;
-<<<<<<< HEAD
 
-=======
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb

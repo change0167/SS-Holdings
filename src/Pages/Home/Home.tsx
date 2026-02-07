@@ -1,31 +1,3 @@
-<<<<<<< HEAD
-=======
-// import React from "react";
-// import homeBg from "../../assets/HomeBg.jpg";
-
-// function Home() {
-//   return (
-//     <section
-//       id="home"
-//       style={{
-//         backgroundImage: `url(${homeBg})`,
-//         backgroundSize: "cover",
-//         backgroundPosition: "center",
-//         backgroundRepeat: "no-repeat",
-//         minHeight: "100vh",
-//         display: "flex",
-//         alignItems: "center",
-//         justifyContent: "center",
-//         color: "white",
-//       }}
-//     >
-//       SS Holdings a venture to build affordable housing for all.
-//     </section>
-//   );
-// }
-
-// export default Home;
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 
 import React from "react";
 import homeBg from "../../assets/HomeBg.jpg";

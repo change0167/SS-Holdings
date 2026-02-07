@@ -3,30 +3,19 @@
   border-radius: 18px;
   overflow: hidden;
   cursor: pointer;
-<<<<<<< HEAD
 
   box-shadow: 0 14px 34px rgba(85, 107, 79, 0.18);
-=======
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .project-card:hover {
   transform: translateY(-6px);
-<<<<<<< HEAD
   box-shadow: 0 32px 64px rgba(85, 107, 79, 0.28);
 }
 
 /* ===============================
    IMAGE
 =============================== */
-=======
-  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.15);
-}
-
-/* Image */
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 .project-card-image {
   position: relative;
   height: 220px;
@@ -39,20 +28,15 @@
   object-fit: cover;
 }
 
-<<<<<<< HEAD
 /* ===============================
    BADGE
 =============================== */
-=======
-/* Badge */
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 .project-badge {
   position: absolute;
   top: 16px;
   left: 16px;
   padding: 6px 14px;
   border-radius: 999px;
-<<<<<<< HEAD
 
   font-size: 12px;
   font-weight: 700;
@@ -75,25 +59,6 @@
 /* ===============================
    BODY
 =============================== */
-=======
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: capitalize;
-  color: #ffffff;
-  background: #64748b;
-}
-
-/* Status colors */
-.project-badge.completed {
-  background: #16a34a;
-}
-
-.project-badge.ongoing {
-  background: #f59e0b;
-}
-
-/* Body */
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
 .project-card-body {
   padding: 20px;
 }
@@ -101,20 +66,12 @@
 .project-card-body h4 {
   font-size: 18px;
   font-weight: 700;
-<<<<<<< HEAD
   color: #2f3a2f; /* deep olive */
-=======
-  color: #0f172a;
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
   margin-bottom: 8px;
 }
 
 .project-card-body p {
   font-size: 14px;
-<<<<<<< HEAD
   color: #6b705c; /* muted olive-gray */
-=======
-  color: #475569;
->>>>>>> eea6b952463a57d7961d540f011ea1c291d971bb
   line-height: 1.6;
 }
