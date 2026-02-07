@@ -17,7 +17,7 @@ function ContactUs() {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
-    message: "", // UI only (NOT sent to API)
+    message: "", // UI only
   });
 
   const [errors, setErrors] = useState({
@@ -53,7 +53,6 @@ function ContactUs() {
 
   /* =====================
      SUBMIT LEAD (POST)
-     MESSAGE IS NOT SENT
   ====================== */
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -82,7 +81,6 @@ function ContactUs() {
         throw new Error("Failed to submit lead");
       }
 
-      // Reset form (message stays UI-only)
       setFormData({ name: "", phone: "", message: "" });
       setErrors({ name: "", phone: "" });
 
@@ -97,7 +95,6 @@ function ContactUs() {
 
   /* =====================
      STRAPI CONTACT INFO
-     (LATEST ENTRY)
   ====================== */
 
   const [contactInfo, setContactInfo] = useState<{
@@ -114,9 +111,7 @@ function ContactUs() {
           `${STRAPI_URL}/api/ss-hodlings?sort=createdAt:desc&pagination[limit]=1`
         );
 
-        if (!res.ok) {
-          throw new Error("Failed to fetch contact info");
-        }
+        if (!res.ok) throw new Error("Failed to fetch contact info");
 
         const json = await res.json();
         const latest = json?.data?.[0];
@@ -148,28 +143,18 @@ function ContactUs() {
           </p>
         </div>
 
-        {/* INFO CARDS */}
         <div className="contact-info-cards">
           <div className="info-card">
             <span className="icon">📞</span>
-            <p>
-              {infoLoading
-                ? "Loading..."
-                : contactInfo?.phone || "Not available"}
-            </p>
+            <p>{infoLoading ? "Loading..." : contactInfo?.phone || "N/A"}</p>
           </div>
 
           <div className="info-card">
             <span className="icon">📍</span>
-            <p>
-              {infoLoading
-                ? "Loading..."
-                : contactInfo?.address || "Not available"}
-            </p>
+            <p>{infoLoading ? "Loading..." : contactInfo?.address || "N/A"}</p>
           </div>
         </div>
 
-        {/* FORM */}
         <div className="contact-form-card">
           <h3>Book a Site Visit</h3>
 
@@ -182,11 +167,8 @@ function ContactUs() {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="Enter your full name"
                 />
-                {errors.name && (
-                  <span className="error-text">{errors.name}</span>
-                )}
+                {errors.name && <span className="error-text">{errors.name}</span>}
               </div>
 
               <div>
@@ -196,7 +178,6 @@ function ContactUs() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  placeholder="Enter your phone number"
                 />
                 {errors.phone && (
                   <span className="error-text">{errors.phone}</span>
@@ -210,7 +191,6 @@ function ContactUs() {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Write your message"
               />
             </div>
 
