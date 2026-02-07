@@ -1,28 +1,3 @@
-// import React from 'react';
-// import Layout from './Pages/layout/Layout';
-// import { Route, Routes } from 'react-router-dom';
-// import BlogDetail from './Pages/Blogs/BlogDetails';
-// import ProjectDetail from './Pages/Projects/ProjectDetails';
-// import VastuDetail from './Pages/Vastu/VastuDetail';
-
-// const App = () => {
-//   return (
-//     <Routes>
-//       {/* Landing page (single page sections) */}
-//       <Route path="/" element={<Layout />} />
-
-//       {/* Detail pages */}
-//       <Route path="/blog/:id" element={<BlogDetail />} />
-//       <Route path="/project/:id" element={<ProjectDetail />} />
-//       <Route path="/vastu/:id" element={<VastuDetail />} />
-
-//     </Routes>
-//   );
-// };
-
-// export default App;
-
-import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 import Layout from './Pages/layout/Layout';
