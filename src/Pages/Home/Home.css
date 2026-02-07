@@ -1,0 +1,115 @@
+/* =========================
+   HOME HERO SECTION (LUXURY)
+========================= */
+
+/* Hide H1 on desktop by default */
+.home-content h1 {
+  display: none;
+}
+
+.home-hero {
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* Show RIGHT side of image */
+  background-position: right center;
+
+  position: relative;
+  padding: 80px 64px;
+  box-sizing: border-box;
+}
+
+/* =========================
+   TEXT (TOP LEFT)
+========================= */
+.home-content {
+  max-width: 420px;
+  color: #f7f4ef; /* warm beige text */
+}
+
+.home-content p {
+  font-size: 22px;
+  line-height: 1.7;
+  color: #f7f4ef;
+  text-shadow: 0 4px 14px rgba(47, 58, 47, 0.55); /* olive-charcoal shadow */
+}
+
+/* =========================
+   CTA BUTTON (RIGHT BOTTOM)
+========================= */
+.home-cta {
+  position: absolute;
+  right: 64px;
+  bottom: 48px;
+
+  background-color: #f7f4ef; /* warm beige */
+  color: #2f3a2f;            /* deep olive */
+  padding: 14px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+
+  box-shadow:
+    0 12px 32px rgba(47, 58, 47, 0.35),
+    inset 0 0 0 1px rgba(199, 178, 124, 0.45); /* subtle gold edge */
+
+  transition: transform 0.2s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.home-cta:hover {
+  transform: scale(1.05);
+  background-color: #556b4f; /* rich olive */
+  color: #f7f4ef;
+  box-shadow:
+    0 18px 46px rgba(47, 58, 47, 0.55),
+    inset 0 0 0 1px rgba(199, 178, 124, 0.6);
+}
+
+.home-cta:active {
+  transform: scale(0.95);
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .home-content h1 {
+    display: block;
+  }
+}
+
+/* Mobile – keep original size */
+@media (max-width: 768px) {
+  .home-content p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-hero {
+    padding: 100px 24px;
+    background-position: right top;
+  }
+
+  .home-content h1 {
+    font-size: 32px;
+    color: #f7f4ef;
+    text-shadow: 0 4px 14px rgba(47, 58, 47, 0.6);
+  }
+
+  .home-content p {
+    font-size: 16px;
+  }
+
+  /* Move CTA below content on mobile */
+  .home-cta {
+    position: static;
+    margin-top: 32px;
+    display: inline-block;
+  }
+}

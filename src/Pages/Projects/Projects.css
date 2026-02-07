@@ -1,0 +1,70 @@
+/* ===============================
+   PROJECTS SECTION (LUXURY)
+=============================== */
+.projects-section {
+  padding: 64px 0;
+  background-color: #f7f4ef; /* warm beige */
+}
+
+/* Container */
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ===============================
+   HEADER
+=============================== */
+.projects-header {
+  max-width: 420px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.projects-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2f3a2f; /* deep olive */
+  letter-spacing: 0.3px;
+}
+
+.projects-header p {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #6b705c; /* muted olive-gray */
+  line-height: 1.6;
+}
+
+/* ===============================
+   GRID
+=============================== */
+.projects-grid {
+  max-width: 1200px;
+  margin: 64px auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+/* ===============================
+   SUBHEADING
+=============================== */
+.projects-subheading {
+  margin-top: 64px;
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #3f4a3f; /* strong muted olive */
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+/* ===============================
+   RESPONSIVE
+=============================== */
+@media (max-width: 768px) {
+  .projects-header h2 {
+    font-size: 28px;
+  }
+}

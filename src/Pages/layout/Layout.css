@@ -1,0 +1,53 @@
+/* =========================
+   WHATSAPP FLOAT BUTTON (LUXURY)
+========================= */
+.whatsapp-float {
+  position: fixed;
+  left: 16px;
+  bottom: 24px;
+  width: 52px;
+  height: 52px;
+
+  background: linear-gradient(
+    145deg,
+    #1fa855,
+    #2fc76f
+  ); /* refined WhatsApp green */
+
+  color: #ffffff;
+  font-size: 24px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  box-shadow:
+    0 10px 28px rgba(47, 58, 47, 0.45),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+
+  z-index: 1200;
+  transition: transform 0.2s ease, box-shadow 0.25s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.08);
+  box-shadow:
+    0 16px 38px rgba(47, 58, 47, 0.65),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+}
+
+.whatsapp-float:active {
+  transform: scale(0.95);
+}
+
+/* =========================
+   MOBILE TWEAK
+========================= */
+@media (max-width: 768px) {
+  .whatsapp-float {
+    left: 12px;
+    bottom: 16px;
+  }
+}

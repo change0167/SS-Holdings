@@ -1,0 +1,192 @@
+.project-detail-section {
+  padding: 96px 0;
+  background: linear-gradient(
+    180deg,
+    #f7f4ef 0%,
+    #ffffff 100%
+  );
+}
+
+.project-detail-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* ===============================
+   BACK BUTTON
+=============================== */
+.back-btn {
+  background: rgba(85, 107, 79, 0.12);
+  border: 1.5px solid #556b4f;
+  padding: 8px 16px;
+  border-radius: 999px;
+  color: #556b4f;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 32px;
+  transition: all 0.25s ease;
+}
+
+.back-btn:hover {
+  background: #556b4f;
+  color: #f7f4ef;
+  box-shadow: 0 6px 16px rgba(85, 107, 79, 0.35);
+}
+
+.back-btn:active {
+  transform: scale(0.96);
+}
+
+.back-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(199, 178, 124, 0.45);
+}
+
+/* ===============================
+   GALLERY VIEW ALL BUTTON
+=============================== */
+.gallery-view-btn {
+  margin-top: 16px;
+  padding: 10px 18px;
+  background: transparent;
+  border: 1px solid #b59a63; /* antique gold */
+  color: #b59a63;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.gallery-view-btn:hover {
+  background: #b59a63;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(181, 154, 99, 0.35);
+}
+
+.gallery-view-btn:active {
+  transform: scale(0.96);
+}
+
+/* ===============================
+   IMAGE
+=============================== */
+.project-detail-image {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 32px;
+  box-shadow: 0 30px 60px rgba(85, 107, 79, 0.25);
+}
+
+/* ===============================
+   TITLE
+=============================== */
+.project-detail-title {
+  font-size: 40px;
+  font-weight: 800;
+  color: #2f3a2f;
+  margin-bottom: 12px;
+}
+
+/* ===============================
+   META
+=============================== */
+.project-meta {
+  display: flex;
+  gap: 16px;
+  font-size: 14px;
+  color: #6b705c;
+  margin-bottom: 40px;
+}
+
+/* ===============================
+   SECTIONS
+=============================== */
+.project-section {
+  margin-bottom: 48px;
+}
+
+.project-section h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2f3a2f;
+  margin-bottom: 16px;
+}
+
+.project-section p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #3f4a3f;
+  margin-bottom: 16px;
+}
+
+/* ===============================
+   GALLERY
+=============================== */
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.project-gallery img {
+  width: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 12px 24px rgba(85, 107, 79, 0.18);
+}
+
+/* ===============================
+   BROCHURE
+=============================== */
+.project-brochure a {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #556b4f;
+  color: #f7f4ef;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 10px 24px rgba(85, 107, 79, 0.35);
+}
+
+.project-brochure a:hover {
+  background: #4a5f45;
+}
+
+/* ===============================
+   PROJECT MAP
+=============================== */
+.project-map-wrapper {
+  width: 100%;
+  min-height: 420px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 16px;
+  box-shadow: 0 20px 40px rgba(85, 107, 79, 0.25);
+}
+
+.project-map-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  border: 0;
+}
+
+/* ===============================
+   RESPONSIVE
+=============================== */
+@media (max-width: 768px) {
+  .project-map-wrapper,
+  .project-map-wrapper iframe {
+    min-height: 300px;
+  }
+
+  .project-detail-title {
+    font-size: 30px;
+  }
+}
