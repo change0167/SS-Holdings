@@ -1,11 +1,11 @@
-import React from 'react'
+//import React from 'react'
 
-function specification() {
-  return (
-    <div>
+//function specification() {
+  //return (
+  //  <div>
       
-    </div>
-  )
-}
+    //</div>
+  //)
+//}
 
-export default specification
+//export default specification
