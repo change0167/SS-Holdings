@@ -153,6 +153,11 @@ function ContactUs() {
             <span className="icon">📍</span>
             <p>{infoLoading ? "Loading..." : contactInfo?.address || "N/A"}</p>
           </div>
+          <div className="info-card">
+            <span className="icon">✉️</span>
+            <p>Info@ssholdings.com</p>
+          </div>
+
         </div>
 
         <div className="contact-form-card">
