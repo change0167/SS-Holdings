@@ -28,8 +28,9 @@ const App = () => {
               <Home />
               <AboutUs />
               <Projects />
-              <Vastu />
               <Blogs />
+
+              <Vastu />
               <FAQs />
               <ContactUs />
               <Footer/>

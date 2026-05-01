@@ -1,5 +1,6 @@
 import "./AboutUs.css";
-
+import seetharama from "../../assets/seetharamaraju.jpeg";
+import somaraju from "../../assets/somaraju.jpeg";
 function AboutUs() {
   return (
     <section id="about-us" className="about-section">
@@ -11,7 +12,7 @@ function AboutUs() {
         <div className="about-cards">
           <div className="about-card">
             <img
-              src="src/assets/seetharamaraju.jpeg"
+              src={seetharama}
               alt="Seetharamaraju"
             />
             <p className="name">Seetharama Raju Sayyaparaju</p>
@@ -20,7 +21,7 @@ function AboutUs() {
 
           <div className="about-card">
             <img
-              src="src/assets/somaraju.jpeg"
+              src={somaraju}
               alt="Somaraju"
             />
             <p className="name">Somaraju</p>
