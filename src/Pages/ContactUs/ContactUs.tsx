@@ -156,6 +156,7 @@ function ContactUs() {
           <div className="info-card">
             <span className="icon">✉️</span>
             <p>Info@ssholdings.com</p>
+            
           </div>
 
         </div>
