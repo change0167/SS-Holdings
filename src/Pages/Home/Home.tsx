@@ -11,7 +11,7 @@ function Home() {
       {/* Text content */}
       <div className="home-content">
         <h1>SS Holdings</h1>
-        <p>A venture to build affordable housing for all.</p>
+        <p>The Address Of Quality.</p>
       </div>
 
       {/* CTA Button */}
