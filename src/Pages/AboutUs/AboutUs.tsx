@@ -45,7 +45,7 @@ function AboutUs() {
         <div className="track-record">
           <h2 className="track-heading">SS Holdings Track Record</h2>
           <p className="track-highlight">
-            25 years. 35+ projects. One standard — excellence.
+            25 years. 35+ projects. One standard — Excellence
           </p>
 
           <p className="track-text">
