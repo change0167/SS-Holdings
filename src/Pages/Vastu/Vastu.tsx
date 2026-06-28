@@ -54,10 +54,9 @@ function Vastu() {
         <div className="vastu-container">
           {/* Header */}
           <div className="vastu-header">
-            <h2>Vastu Guidance</h2>
+            <h2>Vastu-Compliant Homes</h2>
             <p>
-              Explore vastu principles to bring harmony, health and prosperity
-              into your space.
+              Thoughtfully designed and built according to Vastu principles
             </p>
           </div>
 

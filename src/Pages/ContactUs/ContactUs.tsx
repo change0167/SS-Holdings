@@ -137,10 +137,7 @@ function ContactUs() {
       <div className="contact-container">
         <div className="contact-header">
           <h2>Contact us</h2>
-          <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis.
-          </p>
+        
         </div>
 
         <div className="contact-info-cards">

@@ -190,3 +190,20 @@
     font-size: 30px;
   }
 }
+
+.locality-btn {  display: inline-block;
+  padding: 0px 10px;
+  background: #556b4f;
+  color: #f7f4ef;
+  border-radius: 9px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 10px 24px rgba(85, 107, 79, 0.35);
+  padding-bottom: -10px;
+  
+}
+
+.locality-btn * {
+  color: #f4f1e8 !important;
+  text-decoration: none;
+}

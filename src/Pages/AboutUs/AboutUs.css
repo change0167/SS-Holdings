@@ -73,3 +73,29 @@
     flex-wrap: wrap;
   }
 }
+
+.track-record {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 4rem;
+}
+
+.track-heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.track-highlight {
+  font-size: 1.4rem;
+  font-weight: 600;
+   color: #2f3a2f; /* dark olive */
+  margin-bottom: 1.5rem;
+}
+
+.track-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 1rem;
+}

@@ -1,3 +1,5 @@
+//temp data for blogs page
+
 export type BlogItem = {
   id: number;
   title: string;

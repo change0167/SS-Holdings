@@ -16,6 +16,7 @@
     "@heroui/system": "^2.4.25",
     "@heroui/theme": "^2.4.25",
     "@mui/material": "^7.3.7",
+    "@strapi/blocks-react-renderer": "^1.0.2",
     "framer-motion": "^12.29.2",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",

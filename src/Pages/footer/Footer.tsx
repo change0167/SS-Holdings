@@ -26,14 +26,15 @@ function Footer() {
             <p>Rushikonda, Visakhapatnam</p>
             <p>+91 90142 45781</p>
             <a href="mailto:contact@ssholdings.com">
-              contact@ssholdings.com
+Info@ssholdings.com
+
             </a>
           </div>
 
           <div className="footer-socials">
             <a href="#" aria-label="LinkedIn">in</a>
             <a href="#" aria-label="Facebook">f</a>
-            <a href="#" aria-label="YouTube">▶</a>
+            <a href="https://www.youtube.com/watch?v=hrW0tPPtXxM" aria-label="YouTube">▶</a>
             <a href="#" aria-label="Instagram">◎</a>
           </div>
         </div>

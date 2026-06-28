@@ -27,9 +27,7 @@ function FAQs() {
         {/* Header */}
         <div className="faq-header">
           <h2>Frequently Asked Questions</h2>
-          <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-          </p>
+         
         </div>
 
         {/* FAQ list */}
